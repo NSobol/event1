@@ -16,7 +16,7 @@ export default class GameController {
    * Вешает обработчик события клика по доске
    */
   hangEventClickByCells() {
-    const board = document.querySelector('#game-board');
+    const board = document.getElementById('game-board');
     board.addEventListener('click', (e) => {
       if (e.target.classList.contains('board__col')) this.beatHammer();
       if (e.target.classList.contains('_active')) this.addHitPoint(e.target);
