@@ -32,6 +32,6 @@ export default class Board {
    * @param {HTMLElement} board доска в виде таблицы, которую необходимо вставить на страницу
    */
   insertBoardOnPage(board) {
-    this.document.getElementById('game-board').appendChild(board);
+    this.document.querySelector('#game-board').appendChild(board);
   }
 }
